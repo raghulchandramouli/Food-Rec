@@ -1,33 +1,38 @@
-###Recipe Assistant
-A Streamlit web application powered by Google's Gemini AI that provides personalized recipe recommendations and cooking instructions.
-Features
+# Food-Rec
 
-###Recipe generation based on user preferences and constraints
-Real-time streaming responses
-Chat history tracking
-Structured recipe format with ingredients, instructions, and tips
-Customizable prompt templates
+## Overview
+Food-Rec is a food recommendation application that helps users discover new recipes based on their preferences and dietary restrictions.
 
-Installation
 
-Clone the repository:
+## Supervised Fine-Tuning:
+Took Google's model and Fine-tuned it on `what's cooking dataset` for better performance and made it into an integrated model in Google AI Studio. 
 
-bashCopygit clone https://github.com/raghulchandramouli/Food-Rec.git
-cd food-rec
+## Features
+- Personalized recipe recommendations
+- Dietary restriction filters (e.g., vegan, gluten-free)
+- User ratings and reviews
+- Save favorite recipes
 
-Install dependencies:
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/raghulchandramouli/Food-Rec.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Food-Rec
+    ```
+3. Install the dependencies:
+    ```bash
+    pip install requirements.txt
+    ```
 
-pip install -r requirements.txt
+## Usage
+1. Start the application:
+    ```bash
+    streamlit run main.py
+    ```
+2. Open your browser and go to `http://localhost:3000`.
 
-Set up environment variables:
-Create a .env file in the project root:
-
-Requirements
-
-Python 3.8+
-Streamlit
-google-generativeai
-python-dotenv
-
-License
-MIT License
+## Contact
+For any questions or feedback, please contact [RaghulChandramouli@gmail.com].
